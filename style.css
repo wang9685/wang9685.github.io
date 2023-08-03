@@ -49,6 +49,14 @@ body
   height: 200px;
   border-radius: 50%;
 }
+.profileText .imgBx img
+{
+  position: absolute;
+  top: 0;
+  Left: 0;
+  width: 100%;
+  object-fit: cover;
+}
 .container .right_Side
 {
   position: relative;
