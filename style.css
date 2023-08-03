@@ -21,7 +21,7 @@ body
   max-width: 1000px;
   min-height: 100px;
   background: #fff;
-   display: grid;
+  display: grid;
 }
 .container .left_Side
 {
