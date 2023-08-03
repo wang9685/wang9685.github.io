@@ -22,7 +22,7 @@ body
   min-height: 100px;
   background: #fff;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
 }
 .container .left_Side
 {
