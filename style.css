@@ -14,13 +14,19 @@ body
   olign-items: center;
   min-height: 100vh;
 }
-.container .left_Side
+.container 
 {
   position: relative;
   width: 100%;
   max-width: 1000px;
   min-height: 100px;
   background: #fff;
+}
+.container .left_Side
+{
+  position: relative;
+  padding: 40px;
+  background: #003147;
 }
 .container .right_Side
 {
