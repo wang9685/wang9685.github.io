@@ -11,7 +11,7 @@ body
   background: lightblue;
   display: flex;
   justify-content: center;
-  olign-items: center;
+  align-items: center;
   min-height: 100vh;
 }
 .container 
