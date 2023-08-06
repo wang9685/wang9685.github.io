@@ -9,6 +9,7 @@
 html {
     height: 100%;
 }
+/* body & background */
 body
 {
     margin: 0;
@@ -43,7 +44,7 @@ body
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -68,7 +69,7 @@ body
 {
     position: relative;
     width: 100%;
-    background: rgb(45, 81, 114);
+    background: rgb(5, 72, 116);
     display: grid;
     grid-template-columns: 1fr 4fr;
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
