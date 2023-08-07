@@ -280,6 +280,7 @@ body
 }
 
 .flip-card-front {
+    /* Carnegie Red!! */
     background-color: rgb(196, 18, 48);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -309,8 +310,10 @@ body
 
 .flip-card-font-title {
     color: white;
-    font-size: 30px;
+    font-size: 33px;
     font-weight: bold;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .flip-card-font-content {
