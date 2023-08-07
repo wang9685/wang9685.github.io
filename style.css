@@ -149,7 +149,6 @@ body
     margin-bottom: 20px;
     font-size: 25px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-
 }
 
 .timeline__component {
@@ -195,7 +194,7 @@ body
 }
 
 /* LEAVE TILL LAST */
-    .timeline__point--bottom {
+.timeline__point--bottom {
     top: initial;
     bottom: 0;
 }
@@ -215,3 +214,94 @@ body
     margin-top: 0.3em;
 }
 
+/* Projects */
+.cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px auto auto;
+    max-width: 1050px;
+    padding: 25px;
+    display: grid;
+    font-family: "Fira Sans", sans-serif;
+    color: #000000;
+    background-color: #d3d3e281;
+    border-radius: 40px 40px;
+    overflow: hidden;
+
+}
+
+.cards_title {
+    text-align: center; 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-bottom: 5px;
+    font-size: 25px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.flip-card {
+    background-color: transparent;
+    width: auto;
+    height: 450px;
+    perspective: 1000px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: rgb(80, 87, 125);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flip-card-back {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    transform: rotateY(180deg);
+}
+
+/* text for card's back */
+.flip-card-back-content{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.flip-card-font-title {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.flip-card-font-content {
+    color: white;
+    font-size: 20px;
+    line-height: 1.5em;
+}
