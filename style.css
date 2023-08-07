@@ -55,18 +55,38 @@ body
     font-size: 17px;
 }
 
+
+.topnav .resume{
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 40px 40px;
+    background-color: #f6f1f1;
+    color: rgb(196, 18, 48);
+    border-style: solid;
+    border-color: #333;
+}
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
-
+.topnav .resume:hover {
+    background-color: rgb(196, 18, 48);
+    color: rgb(237, 232, 232);
+}
 /* Add a color to the active/current link */
 .topnav a.active {
     background-color: #ddd;
     color: black;
 }
-
+.topnav .resume.active {
+    background-color: #ddd;
+    color: rgb(196, 18, 48);
+}
 
 /* Profile */
 .profile
@@ -112,49 +132,6 @@ body
     font-weight: 600;
     line-height: 1.4em;
 }
-
-/* Button */
-.button {
-    background-image: linear-gradient(rgb(5, 72, 116), #0070C9);
-    border: 1px solid #005295;
-    border-radius: 7px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    direction: ltr;
-    display: relative;
-    margin-left: 200px;
-    font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 1.47059;
-    min-width: 30px;
-    overflow: visible;
-    padding: 4px 15px;
-    text-align: center;
-    vertical-align: baseline;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-  }
-  
-  .button:disabled {
-    cursor: default;
-    opacity: .3;
-  }
-  
-  .button:hover {
-    background-image: linear-gradient(#51A9EE, #147BCD);
-    border-color: #1482D0;
-    text-decoration: none;
-  }
-  
-  .button:active {
-    background-image: linear-gradient(#3D94D9, #0067B9);
-    border-color: #006DBC;
-    outline: none;
-  }
 
 
 .profile .text h2
