@@ -11,7 +11,25 @@
         <title>I-Shu Wang</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
+<script>
+    function clickandexpand(){
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
 
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+            });
+        }
+    }
+    
+</script>
 <body>
     <div class="wapper">
         <div class="topnav">
@@ -348,6 +366,24 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="Set_list">
+            <div class="list_title">
+                <h2>Skills</h2>
+            </div>
+            <button type="button" onclick="clickandexpand()" class="collapsible">Programming Language</button>
+            <div class="content">
+                <p>Python, R, GO Language, SQL</p>
+            </div>
+            <button type="button" onclick="clickandexpand()" class="collapsible">Bioinformatics Tools</button>
+            <div class="content">
+                <p>NCBI, BLAST, TCGA, Snakemake, Bioconductor, BioPython</p>
+            </div>
+            <button type="button" onclick="clickandexpand()" class="collapsible">Data Analysis Packages</button>
+            <div class="content">
+                <p>Numpy, Pandas, SciPy, Seaborn, Statsmodels, plotly, ggplot, Matplotlib, Scikit-Learn, dash, RShiny</p>
+            </div>
+
         </div>
         
 
