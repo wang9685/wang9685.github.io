@@ -372,7 +372,7 @@ body
 
 /* Collapsible */
 .collapsible {
-    background-color: #636acc;
+    background-color: #064a53;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -392,9 +392,9 @@ body
     float: right;
     margin-left: 5px;
 }
-.active, .collapsible:hover {
-    background-color: #555;
-}
+/* .active, .collapsible:hover { */
+    /* background-color: #555; */
+ /* } */ */
 .active:after {
     content: "\2212";
 }
@@ -404,9 +404,10 @@ body
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: #e6e4ec;
+    background-color: #eaeff3;
     border: solid 1px;
-    border-color: #e6e4ec;
+    border-color: #eaeff3;
+    align-items: center;
     
 }
 .content p{
@@ -417,7 +418,7 @@ body
 
 /* contact me */
 .Contact {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr 1fr;
     margin: 20px auto auto;
     max-width: 1050px;
     padding: 25px;
@@ -426,23 +427,47 @@ body
     color: #000000;
     background-color: rgb(237,237,237);
     overflow: hidden;
-
 }
 
-.Contact .fa{
+.contact_title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center; 
+    margin-bottom: 20px;
+    font-size: 25px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.icons .fa{
 	padding:15px;
 	padding-bottom: 15px;
-	padding-top:15px;
+	padding-top:10px;
     background-color:#ddd;
-    margin-left: 50%;
+    text-align: center;
+    margin-left:50%;
 
 }
-.Contact .fa-linkedin {
+.icons .fa-linkedin {
     background: #007bb5;
     color: white;
     border-radius: 20%;
+    font-size: 25px;
+    margin-left: 80%;
+    
+
 }
+
+.icons .fa-envelope {
+    background: red;
+    color: rgb(240, 232, 232);
+    border-radius: 20%;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: white;
+  }
   
-.Contact a{
-	display: block;
-}
