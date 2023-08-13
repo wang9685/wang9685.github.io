@@ -426,6 +426,20 @@ body
     font-size: 20px;
 }
 
+/* Publication */
+.papers {
+    background-color: rgb(237,237,237);
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    line-height: 30px;
+}
+
 /* contact me */
 .Contact {
     grid-template-columns: 1fr 1fr;
@@ -479,5 +493,5 @@ footer {
     text-align: center;
     padding: 10px;
     color: white;
-  }
+}
   
