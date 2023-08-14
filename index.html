@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <!-- use above code can fit the size of the screen -->
@@ -10,26 +10,8 @@
         <title>I-Shu Wang</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        
     </head>
-<script>
-    function clickandexpand(){
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-            });
-        }
-    }
-</script>
 <body>
     <div class="wapper">
         <div class="topnav">
@@ -80,12 +62,14 @@
                         <li>Current GPA: 4.01/4.33</li>
                         <li>Relative Courses: (* Fall Semester)</li> 
                         <ul class="timeline__list_second_item">  
+                            <li>*Computational Molecular Biology and Genomics</li>
                             <li>Bioinformatics Data Integration Practicum</li>
                             <li>Data Analysis for Biological Sciences</li>
                             <li>Algorithms & Advanced Data Structures</li>
                             <li>Fundamentals of Bioinformatics</li>
                             <li>*Introduction to Deep Learning</li>
                             <li>Programming for Scientists</li>  
+                            <li>*Computational Medicine</li>
                             <li>Machine Learning</li>
                         </ul>
                     </ul>
@@ -273,9 +257,9 @@
                 <h2>Projects</h2>
             </div>
             <!-- 1 -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
                         <p class="flip-card-font-title">
                             A python script for bacterial genome analysis
                         </p>
@@ -285,7 +269,7 @@
                             Oct 2022
                         </p>
                     </div>
-                    <div class="flip-card-back">
+                    <div class="card-back">
                             <ul class="flip-card-back-content">
                                 <li>
                                     Created a Python script that perform a series of processes from examining
@@ -308,9 +292,9 @@
                 </div>
             </div>
             <!-- 2 -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
                         <p class="flip-card-font-title">
                             Data analysis and visualization 
                         </p>
@@ -320,7 +304,7 @@
                             Dec 2022
                         </p>
                     </div>
-                    <div class="flip-card-back">
+                    <div class="card-back">
                         <ul class="flip-card-back-content">
                             <li>
                                 Performed statistical analysis on cancer research using 
@@ -342,9 +326,9 @@
                 </div>
             </div>
             <!-- 3 -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
                         <p class="flip-card-font-title">
                             Simulation of intercellular viral infection 
                             via cell-to-cell transmission 
@@ -355,7 +339,7 @@
                             Dec 2022
                         </p>
                     </div>
-                    <div class="flip-card-back">
+                    <div class="card-back">
                         <ul class="flip-card-back-content">
                             <li>
                                 Built a model for users to input parameters based on biological 
@@ -382,9 +366,9 @@
             </div>
 
             <!-- 4 -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
                         <p class="flip-card-font-title">
                             Construction of a Transcriptome Assembly and Annotation Pipeline
                         </p>
@@ -394,7 +378,7 @@
                             Apr 2023
                         </p>
                     </div>
-                    <div class="flip-card-back">
+                    <div class="card-back">
                         <ul class="flip-card-back-content">
                             <li>
                                 Used high-performance computer in cloud environment to analyze whole genome sequences of mammals
@@ -421,9 +405,9 @@
                 </div>
             </div>
             <!-- 5 -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
                         <p class="flip-card-font-title">
                             Analysis of differential gene expression and pathway enrichment in multiple cancers
                         </p>
@@ -433,7 +417,7 @@
                             Apr 2023
                         </p>
                     </div>
-                    <div class="flip-card-back">
+                    <div class="card-back">
                         <ul class="flip-card-back-content">
                             <li>
                                 Conducted analysis of differential gene expression to identify common 
@@ -513,9 +497,12 @@
 
         </div>
     </div>
+    
     <footer>
     </footer>
     
 
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
+
