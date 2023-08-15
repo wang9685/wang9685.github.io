@@ -377,6 +377,8 @@ body
     outline: none;
     font-size: 20px;
     font-weight: bold;
+    margin-top: 15px;
+    
 }
 
 /* Collapsible */
@@ -411,10 +413,9 @@ body
     overflow: hidden;
     /* transition: max-height 0.2s ease-out; */
     background-color: #eaeff3;
-    border: solid 1px;
     border-color: #eaeff3;
     align-items: center;
-    
+    border: solid 1px;
 }
 .content p{
     margin-bottom: 10px;
